@@ -54,7 +54,7 @@ RUN IS_CUDA=$(python -c 'import torch ; print(torch.cuda._is_compiled())'); \
         exit 1; \
     fi
 
-FROM ghcr.io/qtvhao/ffmpeg:main
+FROM ghcr.io/qtvhao/node-20.12.2:main
 
 ARG PYTORCH_VERSION
 ARG TRITON_VERSION
